@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://cdn.iconscout.com/icon/free/png-256/credit-card-955-1115056.png"
+    />
+    <title>Task</title>
+  </head>
+  <body>
+    <div class="l-form">
+      <div class="form">
+        <h1 class="form__title">Calculate You Rewards</h1>
+        <div class="form__div">
+          <input
+            class="form__input"
+            id="inp1"
+            type="number"
+            placeholder=" "
+            value=""
+          />
+          <label for="#inp1" class="form__label">Vendor/Bills</label>
+        </div>
+        <div class="form__div">
+          <input
+            class="form__input"
+            id="inp2"
+            type="number"
+            placeholder=" "
+            value=""
+          />
+          <label for="#inp2" class="form__label">Media/Ad</label>
+        </div>
+        <div class="form__div">
+          <input
+            class="form__input"
+            id="inp3"
+            type="number"
+            placeholder=" "
+            value=""
+          />
+          <label for="#inp3" class="form__label">Corporation spend</label>
+        </div>
+        <div class="form__div">
+          <input
+            class="form__input"
+            id="inp4"
+            type="number"
+            placeholder=" "
+            value=""
+          />
+          <label for="#inp4" class="form__label">Team project</label>
+        </div>
+        <p id="error">Fileds is required</p>
+        <div class="all__buttom">
+          <button
+            id="btn1"
+            class="form__button"
+            type="submit"
+            onclick="{sum1(this)}"
+          >
+            Brex
+          </button>
+          <button
+            id="btn2"
+            class="form__button"
+            type="submit"
+            onclick="{sum2(this)}"
+          >
+            Stripe
+          </button>
+          <button
+            id="btn3"
+            class="form__button"
+            type="submit"
+            onclick="{sum3(this)}"
+          >
+            Amex
+          </button>
+        </div>
+        <div class="reset__buttom">
+          <button
+            id="btn4"
+            type="submit"
+            class="form__button bttn"
+            onclick="{clear1()}"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <div class="info__data">
+        <img
+          src="https://www.zmp.com.au/site/wp-content/uploads/2021/01/Dont-let-your-credit-cards-control-you.jpg"
+        />
+        <div class="info__content">
+          <span class="info" id="span00"></span
+          ><span class="price" id="span0"></span>
+        </div>
+        <div class="info__content">
+          <span class="info">Unlimited Rewards</span
+          ><span class="price" id="span1">0$</span>
+        </div>
+        <div class="info__content">
+          <span class="info">Lifetime Rewards</span
+          ><span class="price" id="span2">0$</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
